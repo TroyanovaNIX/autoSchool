@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Basic {
 
     public static void main(String[] args) {
-        Basic main1 = new Basic();//
+        Basic main1 = new Basic();////
         Scanner scn=new Scanner(System.in);
 
         System.out.println("Subtask1 - minFromTwo. Input 2 numbers ");
