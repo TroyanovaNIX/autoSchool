@@ -176,7 +176,7 @@ public void printListOfValues(Map<String, String> plantsMap){
 
     public List<String> shortestStringInList(List<String> diffStrConsole) {
         List<String> shortestStr=new ArrayList<String>();
-        int min=0;
+        int min=diffStrConsole.get(0).length();
         for (int i=0; i<diffStrConsole.size(); i++){
             int tempLen=diffStrConsole.get(i).length();
             if (tempLen<min){
@@ -386,96 +386,65 @@ public void printListOfValues(Map<String, String> plantsMap){
     }
     public  static void  main (String[] args){
         MainCollections mainCollections=new MainCollections();
-/*
-/////////HashSet из растений
+
+
     System.out.println("Subtask1. Print set of strings");
     mainCollections.printOfSet(mainCollections.initializeSetOfStrings());
 
-///////2. HashMap из 10 пар
         System.out.println("Subtask2. Print map of plants");
         mainCollections.printMapOfPlants(mainCollections.initializeMapOfPlants());
 
-///////3. Коллекция HashMap из котов
         System.out.println("Subtask3. Print map of Cats");
         mainCollections.printMapOfCats(mainCollections.initializeMapOfCats());
 
-////////////4. Вывести на экран список ключей
         System.out.println("Subtask4. Print list of keys of plants");
         mainCollections.printListOfKeys(mainCollections.initializeMapOfPlants());
 
-///////////5. Вывести на экран список значений
         System.out.println("Subtask5. Print list of values of plants");
         mainCollections.printListOfValues(mainCollections.initializeMapOfPlants());
-///////6. Коллекция HashMap из Object
+
         System.out.println("Subtask6. Print map of objects");
         mainCollections.printMapOfobjects(mainCollections.initializeMapOfObjects());
 
-////////////7. 5 различных строчек в списке
         System.out.println("Subtask7. Print list of strings");
         mainCollections.printListOfStrings(mainCollections.initializeListOfStrings());
 
-        ////////8. Самая длинная строка
         System.out.println("Subtask8. The longest stringsfrom the list of strings");
         mainCollections.printListOfStrings(mainCollections.longestStringInList(mainCollections.initializeListOfStringsFromConsole()));
 
-////////9. Самая короткая строка///---------------the same solution as previous task
         System.out.println("Subtask9. The shortest stringsfrom the list of strings");
         mainCollections.printListOfStrings(mainCollections.shortestStringInList(mainCollections.initializeListOfStringsFromConsole()));
 
-////////10. 10 строчек в начало списка
         System.out.println("Subtask10. Put strings on the top of the list");
         mainCollections.printListOfStrings(mainCollections.listByAddingToTheTop());
 
-/////////////11. Удали последнюю строку и вставь её в начало
         System.out.println("Subtask11. Replace last string to the top of the list");
         mainCollections.printListOfStrings(mainCollections.replaceToTheTop(mainCollections.initializeListOfStringsFromConsole(),13));
 
-/////////Задачи на Set и Map
-/////12. Создать множество строк (Set<String>), занести в него 20 слов на букву «Л».
-        System.out.println("Subtask12. Replace last string to the top of the list");
+        System.out.println("Subtask12. Set of strings start with L");
          mainCollections.printSetOfStringsL(mainCollections.initialSettOfStringsL());
 
-///////////////13. Создать множество чисел(Set<Integer>), занести туда 20 различных чисел. Удалить из множества все числа больше 10.
         System.out.println("Subtask13. Remove integers bigger than 10");
         Set<Integer> integers=mainCollections.initialSetOfInts();
         mainCollections.printSetOfInts(integers);
         System.out.println("----------------------------");
         mainCollections.printSetOfInts(mainCollections.removeItemsBiggerThanTen(integers));
 
+        System.out.println("Subtask14. Amount of people with same firstname or lastname");
+        System.out.println(mainCollections.amountOfDupNames(mainCollections.initializeMapOfPerson(), "Ф71", "И1"));
 
 
-
-//========================================================================================================================
-////////14. Создать словарь (Map<String, String>) занести в него десять записей по принципу
-//«Фамилия» - «Имя». Проверить сколько людей имеют совпадающие с заданным имя или фамилию.
-
-
-
-                System.out.print(mainCollections.amountOfDupNames(mainCollections.initializeMapOfPerson(), "Ф71", "И1"));
-
-
-/// 15. Создать словарь (Map<String, LocalDate>) и занести в него десять записей по принципу: «фамилия» - «дата рождения».
-//      Удалить из словаря всех людей, родившихся летом.
+        System.out.println("Subtask15. Remove people with summer birthday month");
         mainCollections.printMapOfPerson(mainCollections.removePersonByMonth(mainCollections.initializeMapOfPersonBirth()));
-*/
-
-//   16. Создать словарь (Map<String, String>) занести в него десять записей по принципу «фамилия» - «имя».
-//    Удалить людей, имеющих одинаковые имена.
-
-//        mainCollections.printMapOfPerson_str(mainCollections.removePersonByFirstname(mainCollections.initializeMapOfPerson()));
 
 
-//                17.
+        System.out.println("Subtask16. Remove people with with same firstname");
+        mainCollections.printMapOfPerson_str(mainCollections.removePersonByFirstname(mainCollections.initializeMapOfPerson()));
 
-  //              1. Создать словарь Map (<String, String>) и добавить туда 10 человек в виде «Фамилия»-«Имя».
-  //              2. Пусть среди этих 10 человек есть люди с одинаковыми именами.
-  //              3. Пусть среди этих 10 человек есть люди с одинаковыми фамилиями. Обратить внимание на количество записей в получившейся коллекции.
-  //              4. Вывести содержимое Map на экран.
-
+        System.out.println("Subtask17. Print people from Map ");
         mainCollections.printPersonMap(mainCollections.initializepersonMapDup());
 
-            }//end Main
-
-        }//end class
+    }
+}
 
 
