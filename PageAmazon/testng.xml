@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite">
+    <parameter name="puzzle" value="puzzle"/>
+    <parameter name="robe" value="robe"/>
+    <parameter name="sock" value="sock"/>
+    <test name="ParamTesting">
+        <classes>
+            <class name="AddProductToCartTest" >
+
+            </class>
+        </classes>
+    </test>
+</suite>
