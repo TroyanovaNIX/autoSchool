@@ -1,0 +1,6 @@
+2019-07-15 23:03:40 INFO SimpleClass:10 - Method 1 is executing
+2019-07-15 23:03:40 ERROR SimpleClass:16 - Method 2 is executing
+2019-07-15 23:06:37 INFO SimpleClass:10 - Method 1 is executing
+2019-07-15 23:06:37 ERROR SimpleClass:16 - Method 2 is executing
+2019-07-16 10:26:30 INFO SimpleClass:11 - Method 1 is executing
+2019-07-16 10:26:30 ERROR SimpleClass:17 - Method 2 is executing
