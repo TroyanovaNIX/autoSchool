@@ -127,11 +127,11 @@ public class BasicConstructions {
     }
 
     public void checkAge(String name, int age) {
-        if (age < 18) System.out.println("Подрасти еще");
+        if (age < 18) System.out.println(name+". Подрасти еще");
     }
 
     public void checkAge2(String name, int age) {
-        if (age > 20) System.out.println("И 18-ти достаточно");
+        if (age > 20) System.out.println(name+". И 18-ти достаточно");
     }
 
     public void guessNumber() {
@@ -178,8 +178,8 @@ public class BasicConstructions {
 
     }
 
-    public void printStringSeveralTimes(String string, int N) {
-        while (N-- > 0) System.out.println(string);
+    public void printStringSeveralTimes(String string, int n) {
+        while (n-- > 0) System.out.println(string);
     }
 
     public void printSquare(int n) {
@@ -242,7 +242,7 @@ public class BasicConstructions {
     }
 
     public void boom(int time) {
-        for (int i = 30; i > -1; i--) {
+        for (int i = time; i > -1; i--) {
             System.out.println(i);
             try {
                 Thread.sleep(100);
