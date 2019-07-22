@@ -7,7 +7,7 @@
     <parameter name="sock" value="sock"/>
     <test name="ParamTesting">
         <classes>
-            <class name="AddProductToCartTest" >
+            <class name="Module11.test.java.AddProductToCartTest" >
 
             </class>
         </classes>
